@@ -123,7 +123,7 @@ while (1)
 	  		HAL_ADC_Stop(&hadc);
 	  		HAL_Delay(500);
 	  		uint32_t soilmoisture;
-soilmoisture=adc_val/10.24;
+			soilmoisture=adc_val/10.24;
 	  		printf("soilmoisture:%ld\n",soilmoisture);
 	  		if(adc_val<500)
 	  		{
@@ -133,11 +133,7 @@ soilmoisture=adc_val/10.24;
 	  		{
 	  			 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);;
 	  		}
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
   }
-  /* USER CODE END 3 */
 
 ```
 
